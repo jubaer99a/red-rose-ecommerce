@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Rose – Premium Hoodies</title>
+<meta name="description" content="Red Rose sells modern, premium hoodies with high quality prints and nationwide delivery across Bangladesh.">
+<meta name="theme-color" content="#4d0614">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8C%B9%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Hanken+Grotesk:wght@300;400;500;600&display=swap">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{display:['"Playfair Display"','Georgia','serif'],sans:['"Hanken Grotesk"','system-ui','sans-serif']},colors:{rose:{DEFAULT:'#8c0f2a',deep:'#4d0614',bright:'#d41f45'}}}}}
+</script>
+<style>
+:root{--fg:#161011;--bg:#f6f2ee;--line:rgba(22,16,17,.18);--g:linear-gradient(135deg,#3d0511,#a3122f)}
+.dark{--fg:#f3ece8;--bg:#0b0809;--line:rgba(243,236,232,.2)}
+html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}::selection{background:#7a0c1e;color:#fff}body{overflow-x:hidden}
+body{background:var(--bg);color:var(--fg);font-family:'Hanken Grotesk',system-ui,sans-serif;transition:background .4s,color .4s}
+.bd{border:1px solid var(--line)}
+/* gradient hover */
+.gh{position:relative;isolation:isolate;transition:transform .5s,color .5s,border-color .5s}
+.gh::before{content:"";position:absolute;inset:0;background:var(--g);opacity:0;transition:opacity .6s;z-index:-1}
+.gh:hover{transform:scale(1.025);color:#fff;border-color:transparent}
+.gh:hover::before{opacity:1}
+/* hero */
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.5s ease}
+.slide.on{opacity:1}
+.slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ln{display:block;overflow:hidden;padding-bottom:.1em}
+.ln span{display:block;transform:translateY(115%);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.on .ln span{transform:none}
+.ln:nth-child(2) span{transition-delay:.2s}.ln:nth-child(3) span{transition-delay:.4s}
+.lg-red{color:#a3122f}.lt .lg-red{color:#7a0c1e}
+.gt{background:linear-gradient(135deg,#4d0614,#c2183a);-webkit-background-clip:text;background-clip:text;color:transparent;width:fit-content}.dark .gt{background-image:linear-gradient(135deg,#a3122f,#f08aa0)}.gh:hover .gt{background:none;color:#fff}
+.dot{animation:sc 1.8s ease-in-out infinite}@keyframes sc{0%{transform:translateY(0);opacity:1}70%{transform:translateY(9px);opacity:0}100%{transform:translateY(0);opacity:0}}
+/* nav underline */
+.nl{position:relative}.nl::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:currentColor;transition:width .3s}.nl:hover::after{width:100%}
+/* faq */
+.fa p{max-height:0;overflow:hidden;padding:0 1.5rem;transition:max-height .5s,padding .5s}
+.fa{transition:background .5s,color .5s}
+.fa.o{background:var(--g);color:#fff;border-color:transparent}
+.fa.o p{max-height:220px;padding:0 1.5rem 1.4rem}
+.fa.o i{transform:rotate(45deg)}.fa i{font-style:normal;transition:transform .3s}
+/* big text */
+#bt{display:grid;cursor:default;--x:50%;--y:50%}
+#bt>*{grid-area:1/1;white-space:nowrap;line-height:1.1;font-family:'Playfair Display',serif;font-weight:900;width:max-content;max-width:none}
+#bt .o{color:transparent;-webkit-text-stroke:2px var(--fg)}
+#bt .f{color:transparent;background:radial-gradient(circle var(--r,300px) at var(--x) var(--y),#9a1230 0,#7a0c1e 40%,#4d0614 74%,rgba(77,6,20,0) 100%);-webkit-background-clip:text;background-clip:text;opacity:0;transition:opacity .7s ease}
+#bt:hover .f{opacity:1}
+/* form */
+.fi{width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);padding:.9rem 0;outline:none;transition:border-color .3s}
+.fi:focus{border-color:#d41f45}
+.fi::placeholder{color:var(--fg);opacity:.45}
+/* cart */
+#cart{opacity:0;visibility:hidden;transition:opacity .6s,visibility .6s}
+#cart.open{opacity:1;visibility:visible}
+.t{animation:tin .4s,tout .5s 2.4s forwards}
+@keyframes tin{from{opacity:0;transform:translateX(30px)}}@keyframes tout{to{opacity:0;transform:translateX(30px)}}
+:focus-visible{outline:2px solid #d41f45;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{transition-duration:.01s!important;animation-duration:.01s!important}}
+</style>
+</head>
+<body class="antialiased">
+<svg width="0" height="0" class="absolute"><symbol id="h" viewBox="0 0 200 200"><path d="M68 28Q100 12 132 28L168 46 192 122 160 130 152 102V186H48V102L40 130 8 122 32 46Z" fill="currentColor"/><path d="M68 28Q100 78 132 28Q100 52 68 28Z" fill="rgba(0,0,0,.4)"/><path d="M90 62V96M110 62V96" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/></symbol></svg>
+
+<header id="hd" class="fixed inset-x-0 top-0 z-50 transition-all duration-500 border-b border-white/15 text-white">
+<div class="mx-auto max-w-6xl px-4 sm:px-6 h-[76px] flex items-center justify-between gap-3 sm:gap-6">
+<a href="#top" class="font-display font-black text-xl sm:text-2xl tracking-wide"><span class="lg-red">Red</span> Rose</a>
+<nav class="hidden md:flex gap-9 text-sm font-medium"><a class="nl" href="#shop">Shop</a><a class="nl" href="#why">Why us</a><a class="nl" href="#reviews">Reviews</a><a class="nl" href="#faq">FAQ</a><a class="nl" href="#contact">Contact</a></nav>
+<div class="flex gap-2 sm:gap-3">
+<button id="th" aria-label="Toggle dark or light mode" class="h-10 w-10 border border-current/40 hover:bg-white/10 transition">☾</button>
+<button id="cb" aria-label="Open cart" class="h-10 px-3 sm:px-4 inline-flex items-center gap-2 border border-current/40 hover:bg-white/10 transition text-sm font-medium"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span><span class="hidden sm:inline">Cart </span>(<span id="cc">0</span>)</span></button>
+<button id="mb" aria-label="Open menu" class="md:hidden h-10 w-10 border border-current/40 hover:bg-white/10 transition">☰</button>
+</div></div></header>
+
+<main id="top">
+<section class="relative h-[100svh] min-h-[600px] overflow-hidden bg-black text-white" aria-label="Red Rose hoodies">
+<div class="slide on"><img referrerpolicy="no-referrer" alt="" src="https://thumbs.dreamstime.com/b/kyiv-ukraine-december-clothing-retail-display-hoodies-racks-modern-store-interior-various-colors-displayed-image-350875129.jpg"></div>
+<div class="slide"><img referrerpolicy="no-referrer" alt="" src="https://thumbs.dreamstime.com/b/contemporary-fashion-retail-space-featuring-minimalist-design-elegant-clothing-displays-bright-lighting-creating-chic-418870356.jpg"></div>
+<div class="slide"><img referrerpolicy="no-referrer" alt="" style="transform:scaleX(-1)" src="https://thumbs.dreamstime.com/b/kyiv-ukraine-december-clothing-retail-display-hoodies-racks-modern-store-interior-various-colors-displayed-image-350875129.jpg"></div>
+<div class="absolute inset-0" style="background:linear-gradient(90deg,rgba(8,4,5,.9) 0%,rgba(8,4,5,.62) 50%,rgba(8,4,5,.25) 100%),linear-gradient(0deg,rgba(77,6,20,.5),transparent 40%)"></div>
+<div class="absolute inset-0 pointer-events-none" id="hs">
+<div class="slide on flex items-center"><h1 class="mx-auto w-full max-w-6xl px-6 font-display font-black leading-[1.02] text-[clamp(2.4rem,9vw,7rem)]" style="text-shadow:0 4px 30px rgba(0,0,0,.6)"><span class="ln"><span>Quiet luxury,</span></span><span class="ln"><span>worn loud,</span></span><span class="ln"><span>in maroon.</span></span></h1></div>
+<div class="slide flex items-center"><h1 class="mx-auto w-full max-w-6xl px-6 font-display font-black leading-[1.02] text-[clamp(2.4rem,9vw,7rem)]" style="text-shadow:0 4px 30px rgba(0,0,0,.6)"><span class="ln"><span>Premium fabric.</span></span><span class="ln"><span>Sharper print.</span></span><span class="ln"><span>Fairer price.</span></span></h1></div>
+<div class="slide flex items-center"><h1 class="mx-auto w-full max-w-6xl px-6 font-display font-black leading-[1.02] text-[clamp(2.4rem,9vw,7rem)]" style="text-shadow:0 4px 30px rgba(0,0,0,.6)"><span class="ln"><span>Delivered</span></span><span class="ln"><span>across all of</span></span><span class="ln"><span>Bangladesh.</span></span></h1></div>
+</div>
+<a href="#why" aria-label="Scroll down" class="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-sm tracking-wide text-white/90 hover:text-white transition"><span>Scroll down</span><svg class="w-5 h-7" viewBox="0 0 20 28" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="1" y="1" width="18" height="26" rx="9"/><circle class="dot" cx="10" cy="8" r="2" fill="currentColor" stroke="none"/></svg></a>
+</section>
+
+<section id="why" class="scroll-mt-20 py-16 md:py-24"><div class="mx-auto max-w-6xl px-6">
+<h2 class="font-display font-bold text-4xl md:text-5xl text-center mb-10 md:mb-14">Made to be worn daily</h2>
+<div id="bento" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"></div></div></section>
+
+<section id="shop" class="scroll-mt-20 py-16 md:py-24"><div class="mx-auto max-w-6xl px-6">
+<h2 class="font-display font-bold text-4xl md:text-5xl text-center mb-10 md:mb-14">The collection</h2>
+<div id="pg" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div></div></section>
+
+<section id="reviews" class="scroll-mt-20 py-16 md:py-24"><div class="mx-auto max-w-6xl px-6">
+<h2 class="font-display font-bold text-4xl md:text-5xl text-center mb-10 md:mb-14">Customer reviews</h2>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="gh bd p-9 shadow-[0_24px_50px_-28px_rgba(77,6,20,.6)]"><div class="tracking-[.3em] text-sm">★★★★★</div><p class="my-5 leading-relaxed">The fabric feels far more expensive than the price. I wear it almost every week.</p><b class="font-display text-lg">Rafi, Dhaka</b></div>
+<div class="gh bd p-9 shadow-[0_24px_50px_-28px_rgba(77,6,20,.6)]"><div class="tracking-[.3em] text-sm">★★★★★</div><p class="my-5 leading-relaxed">Delivery to Chattogram took two days and the print still looks new after washing.</p><b class="font-display text-lg">Nusrat, Chattogram</b></div>
+<div class="gh bd p-9 shadow-[0_24px_50px_-28px_rgba(77,6,20,.6)]"><div class="tracking-[.3em] text-sm">★★★★☆</div><p class="my-5 leading-relaxed">Perfect fit in XL, and the maroon is exactly as shown on the site.</p><b class="font-display text-lg">Tanvir, Sylhet</b></div>
+</div></div></section>
+
+<section id="faq" class="scroll-mt-20 py-16 md:py-24"><div class="mx-auto max-w-3xl px-6">
+<h2 class="font-display font-bold text-4xl md:text-5xl text-center mb-10 md:mb-14">Good to know</h2>
+<div id="fq" class="grid gap-4">
+<div class="fa bd"><button class="w-full flex justify-between gap-4 text-left p-6 font-medium">How long does delivery take?<i>+</i></button><p>Inside Dhaka takes 1–2 days. Outside Dhaka takes 3–5 days.</p></div>
+<div class="fa bd"><button class="w-full flex justify-between gap-4 text-left p-6 font-medium">What are the delivery charges?<i>+</i></button><p>৳60 inside Dhaka and ৳120 outside Dhaka.</p></div>
+<div class="fa bd"><button class="w-full flex justify-between gap-4 text-left p-6 font-medium">Which payment methods do you accept?<i>+</i></button><p>bKash, Nagad and Cash on Delivery.</p></div>
+<div class="fa bd"><button class="w-full flex justify-between gap-4 text-left p-6 font-medium">How do I pick my size?<i>+</i></button><p>Every hoodie comes in M, L, XL and XXL with a relaxed fit. Between sizes, choose the larger one.</p></div>
+<div class="fa bd"><button class="w-full flex justify-between gap-4 text-left p-6 font-medium">Is there a promo code?<i>+</i></button><p>Yes. Enter ROSE5 in your cart for an extra 5% off.</p></div>
+</div></div></section>
+
+<section class="py-20 md:py-28 text-white text-center" style="background:var(--g)"><div class="mx-auto max-w-4xl px-6"><p class="font-display italic font-medium text-[clamp(1.9rem,5vw,3.6rem)] leading-tight">“Wear the rose, own the room.”</p></div></section>
+
+<section id="contact" class="scroll-mt-20 py-16 md:py-24"><div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-10 md:gap-16">
+<div><h2 class="font-display font-bold text-4xl md:text-5xl mb-6">Talk to us</h2><p class="opacity-70 max-w-sm leading-relaxed mb-10">Questions about sizing, orders or delivery? Send a message and we will reply within one working day.</p>
+<div class="grid gap-5 text-sm"><div><div class="opacity-50">Email</div>hello@redrose.com.bd</div><div><div class="opacity-50">Phone</div>+880 1000-000000</div><div><div class="opacity-50">Studio</div>Dhaka, Bangladesh</div></div></div>
+<form id="cf" class="grid gap-5 content-start"><input class="fi" required placeholder="Username" aria-label="Username"><input class="fi" required type="email" placeholder="Email address" aria-label="Email"><textarea class="fi resize-none" required rows="4" placeholder="Your message" aria-label="Message"></textarea>
+<button class="justify-self-start mt-3 px-9 py-4 text-white font-medium transition hover:brightness-125" style="background:var(--g)">Send message</button></form>
+</div></section>
+
+<section class="pb-16 md:pb-24 pt-6 md:pt-10"><div class="mx-auto max-w-6xl px-4 sm:px-6 overflow-hidden"><div id="bt" aria-label="Red Rose"><span class="o" id="bo">RED ROSE</span><span class="f" aria-hidden="true">RED ROSE</span></div></div></section>
+</main>
+
+<footer class="bg-[#0b0809] text-[#eadcd8] pt-16 pb-8"><div class="mx-auto max-w-6xl px-6">
+<div class="grid gap-10 grid-cols-2 md:grid-cols-4 text-sm">
+<div class="col-span-2 md:col-span-1"><div class="font-display font-black text-2xl text-white"><span class="lg-red">Red</span> Rose</div><p class="mt-3 opacity-70 max-w-xs">Modern, premium hoodies delivered to customers across Bangladesh.</p></div>
+<div class="grid gap-2 content-start"><b class="text-white">Shop</b><a class="hover:text-rose-bright" href="#shop">All hoodies</a><a class="hover:text-rose-bright" href="#why">Why Red Rose</a><a class="hover:text-rose-bright" href="#reviews">Reviews</a></div>
+<div class="grid gap-2 content-start"><b class="text-white">Help</b><a class="hover:text-rose-bright" href="#faq">FAQ</a><a class="hover:text-rose-bright" href="#contact">Contact</a><a class="hover:text-rose-bright" href="#top">Back to top</a></div>
+<div class="grid gap-2 content-start"><b class="text-white">Find us</b><a class="hover:text-rose-bright" href="#">Facebook</a><a class="hover:text-rose-bright" href="#">Instagram</a><a class="hover:text-rose-bright" href="tel:+8801000000000">+880 1000-000000</a><span>Dhaka, Bangladesh</span></div>
+</div><div class="border-t border-white/10 mt-12 pt-6 text-xs opacity-60 text-center">© 2026 Red Rose. All rights reserved.</div></div></footer>
+
+<div id="mo" class="fixed inset-0 z-[65] bg-black/60 opacity-0 pointer-events-none transition-opacity duration-500 md:hidden"></div>
+<div id="mm" class="fixed inset-x-0 top-0 z-[70] md:hidden text-white -translate-y-full transition-transform duration-500 ease-out shadow-2xl" style="background:linear-gradient(160deg,#16090c,#4d0614)" aria-hidden="true">
+<div class="flex items-center justify-between px-4 h-[76px] border-b border-white/15"><span class="font-display font-black text-xl">Red Rose</span><button id="mx" aria-label="Close menu" class="h-10 w-10 border border-white/40 hover:bg-white/10">✕</button></div>
+<nav class="grid px-4 pt-2 pb-8"><a class="font-display font-bold text-3xl py-4 border-b border-white/10" href="#shop">Shop</a><a class="font-display font-bold text-3xl py-4 border-b border-white/10" href="#why">Why us</a><a class="font-display font-bold text-3xl py-4 border-b border-white/10" href="#reviews">Reviews</a><a class="font-display font-bold text-3xl py-4 border-b border-white/10" href="#faq">FAQ</a><a class="font-display font-bold text-3xl py-4" href="#contact">Contact</a></nav></div>
+<div id="cart" class="fixed inset-0 z-[100] overflow-y-auto" style="background:var(--bg)" aria-hidden="true">
+<div class="sticky top-0 z-10 flex justify-between items-center px-6 h-[76px] bd border-0 border-b" style="background:var(--bg)"><h3 class="font-display font-bold text-2xl">Your cart</h3><button id="cl" aria-label="Close cart" class="h-10 w-10 bd text-lg hover:bg-rose hover:text-white transition">✕</button></div>
+<div class="mx-auto max-w-3xl px-6 py-8 grid gap-5 pb-20"><div id="ci" class="grid gap-4"></div>
+<div class="bd p-7 grid gap-4"><h3 class="font-display font-bold text-xl">Delivery details</h3>
+<input id="fn" class="fi" placeholder="Full name" aria-label="Full name"><input id="ph" type="tel" class="fi" placeholder="Phone number" aria-label="Phone"><input id="ad" class="fi" placeholder="Delivery address" aria-label="Address"><input id="ex" class="fi" placeholder="Additional info (optional)" aria-label="Additional info">
+<select id="rg" class="fi" aria-label="Delivery area"><option value="60" style="color:#000">Inside Dhaka – ৳60</option><option value="120" style="color:#000">Outside Dhaka – ৳120</option></select>
+<div class="flex gap-3"><input id="pc" class="fi" placeholder="Promo code"><button id="pa" type="button" class="px-6 bd hover:bg-rose hover:text-white transition">Apply</button></div>
+<div class="flex flex-wrap gap-3 text-sm"><label class="bd px-4 py-2 flex gap-2 items-center cursor-pointer"><input type="radio" name="py" checked>bKash</label><label class="bd px-4 py-2 flex gap-2 items-center cursor-pointer"><input type="radio" name="py">Nagad</label><label class="bd px-4 py-2 flex gap-2 items-center cursor-pointer"><input type="radio" name="py">Cash on Delivery</label></div>
+<div class="grid gap-2 text-sm pt-2"><div class="flex justify-between"><span>Subtotal</span><span id="s1"></span></div><div class="flex justify-between"><span>Promo discount</span><span id="s2"></span></div><div class="flex justify-between"><span>Delivery</span><span id="s3"></span></div><div class="flex justify-between font-display font-bold text-xl border-t bd pt-3"><span>Total</span><span id="s4"></span></div></div>
+<button id="po" class="py-4 text-white font-medium hover:brightness-125 transition" style="background:var(--g)">Place order</button></div></div></div>
+<div id="toast" class="fixed right-4 left-4 sm:left-auto top-24 z-[200] grid gap-3 justify-items-end" aria-live="polite"></div>
+
+<script>
+/* Product image URLs, same order as products. Empty or broken = hoodie placeholder */
+var IMG=["https://i.pinimg.com/1200x/05/d2/59/05d2591bb248ddea764cf0bcaac61381.jpg","https://i.pinimg.com/736x/ab/4c/47/ab4c475901360150a89cba82c8fe4a56.jpg","https://i.pinimg.com/736x/e2/33/ef/e233ef67e546eb3fa25140d394932a69.jpg","https://i.pinimg.com/1200x/e0/48/8f/e0488f6f61414139ec8ad501bab36738.jpg","https://i.pinimg.com/736x/d6/75/f8/d675f83ade516791f32372397fffc72b.jpg","https://i.pinimg.com/736x/22/90/00/229000c6e52e8b8fcfd03ee3da0c8609.jpg","https://i.pinimg.com/736x/77/12/67/7712676b08b38821decf36c1023fde50.jpg","https://i.pinimg.com/736x/4d/86/6b/4d866b79ecbd2a49d41eb5ec35b566a2.jpg","https://i.pinimg.com/1200x/b1/68/ea/b168ea25743b2b37ff99602e530e658d.jpg","https://i.pinimg.com/736x/51/39/b6/5139b6372ed6101baf67918eb5260f75.jpg","https://i.pinimg.com/736x/1d/5d/0a/1d5d0a9405ac48efab38faba06b072af.jpg","https://i.pinimg.com/736x/2b/82/70/2b8270a1b95f2e0edee16a6cb9fbeb6c.jpg"];
+var P=[["Maroon Reserve",1290,"#8b1220"],["Obsidian Core",1350,"#16120f"],["Pearl Classic",1190,"#d9d2ca"],["Rosewood Signature",1490,"#a3162f"],["Merlot Heritage",1250,"#6e0f1c"],["Graphite Atelier",1390,"#2a2523"],["Sand Studio",1210,"#cdbfae"],["Bordeaux Edition",1450,"#7a1428"],["Onyx Script",1320,"#0f0d0d"],["Ivory Essential",1280,"#e2d8cc"],["Garnet Street",1520,"#b3122f"],["Claret Origin",1180,"#5d0d1a"]];
+var B=[["Premium fabric","Heavy, soft fleece that keeps its shape wash after wash."],["High quality print","Sharp, detailed prints that do not crack or fade."],["Fair pricing","Luxury finish without the luxury price tag."],["Nationwide delivery","We deliver to every district, with Dhaka orders arriving fastest."],["Modern classy design","Clean cuts and considered details for everyday wear."],["Sizes M to XXL","A relaxed, flattering fit for everyone."]];
+var C={},promo=false,$=function(i){return document.getElementById(i)},tk=function(n){return "৳"+n.toLocaleString("en-US")};
+var r=document.documentElement;
+try{if(matchMedia("(prefers-color-scheme: dark)").matches)r.classList.add("dark")}catch(e){}
+function ti(){$("th").textContent=r.classList.contains("dark")?"☀":"☾"}ti();
+$("th").onclick=function(){r.classList.toggle("dark");ti();hd()};
+/* header */
+function hd(){var s=scrollY>60,h=$("hd"),d=r.classList.contains("dark");
+h.className="fixed inset-x-0 top-0 z-50 transition-all duration-500 "+(s?"backdrop-blur-md border-b bd "+(d?"bg-[#0b0809]/85 text-white":"bg-[#f6f2ee]/90 text-[#161011] lt"):"border-b border-white/15 text-white")}
+addEventListener("scroll",hd);hd();
+/* hero */
+var tx=document.querySelectorAll("#hs .slide"),im=document.querySelectorAll("section > .slide"),si=0;
+setInterval(function(){tx[si].classList.remove("on");im[si].classList.remove("on");si=(si+1)%3;tx[si].classList.add("on");im[si].classList.add("on")},3000);
+/* bento */
+B.forEach(function(b){var d=document.createElement("div");d.className="gh bd p-9 min-h-[230px] flex flex-col justify-end";d.innerHTML='<span class="block w-10 h-px bg-current mb-6 opacity-60"></span><h3 class="gt font-display font-bold text-2xl mb-2">'+b[0]+'</h3><p class="opacity-75 leading-relaxed">'+b[1]+'</p>';$("bento").appendChild(d)});
+/* toast */
+function toast(m){var t=document.createElement("div");t.className="t text-white px-5 py-3 shadow-xl";t.style.background="var(--g)";t.textContent=m;$("toast").appendChild(t);setTimeout(function(){t.remove()},3000)}
+/* image block */
+function pic(i,c){return '<div class="relative w-full h-full grid place-items-center bg-gradient-to-br from-[#d8cdc6] to-[#8c7a76]"><svg class="w-3/4" style="color:'+P[i][2]+';filter:drop-shadow(0 14px 14px rgba(0,0,0,.35))" viewBox="0 0 200 200"><use href="#h"/></svg>'+(IMG[i]?'<img referrerpolicy="no-referrer" src="'+IMG[i]+'" alt="'+P[i][0]+'" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">':'')+'</div>'}
+/* products */
+P.forEach(function(p,i){var d=document.createElement("div");d.dataset.i=i;d.dataset.s="M";d.className="group bd p-4 transition hover:shadow-[0_24px_50px_-30px_rgba(77,6,20,.7)]";
+d.innerHTML='<div class="aspect-[4/5] overflow-hidden"><div class="w-full h-full transition-transform duration-700 group-hover:scale-105">'+pic(i)+'</div></div><div class="pt-5 grid gap-3"><div class="flex justify-between items-baseline gap-3"><h3 class="font-display font-bold text-xl">'+p[0]+'</h3><span class="font-medium">'+tk(p[1])+'</span></div><div class="sz flex gap-2">'+["M","L","XL","XXL"].map(function(s){return '<button type="button" class="flex-1 py-2 text-sm bd transition '+(s=="M"?'bg-[color:var(--fg)] text-[color:var(--bg)]':'')+'">'+s+'</button>'}).join("")+'</div><button type="button" class="ab py-3.5 text-white text-sm font-medium hover:brightness-125 transition" style="background:var(--g)">Add to cart</button></div>';
+$("pg").appendChild(d)});
+$("pg").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var c=b.closest("[data-i]");
+if(b.parentNode.classList.contains("sz")){b.parentNode.querySelectorAll("button").forEach(function(x){x.classList.remove("bg-[color:var(--fg)]","text-[color:var(--bg)]")});b.classList.add("bg-[color:var(--fg)]","text-[color:var(--bg)]");c.dataset.s=b.textContent}
+else if(b.classList.contains("ab")){if(add(+c.dataset.i,c.dataset.s)){b.textContent="Added ✓";setTimeout(function(){b.textContent="Add to cart"},1300)}}});
+function cnt(i){var n=0;for(var k in C)if(C[k].i==i)n+=C[k].q;return n}
+function add(i,s){if(cnt(i)>=5){toast("Maximum 5 per item");return false}var k=i+"|"+s;C[k]=C[k]||{i:i,s:s,q:0};C[k].q++;draw();toast(P[i][0]+" ("+s+") added to cart");return true}
+/* cart */
+function draw(){var h="",n=0,sub=0;for(var k in C){var c=C[k],p=P[c.i];n+=c.q;sub+=p[1]*c.q;
+h+='<div class="bd p-4 grid grid-cols-[84px_1fr_auto] gap-4 items-center"><div class="h-[104px] overflow-hidden">'+pic(c.i)+'</div><div><b class="font-display text-lg">'+p[0]+'</b><div class="text-sm opacity-70">Size '+c.s+' · '+tk(p[1])+'</div><div class="flex items-center gap-3 mt-3"><button class="bd w-8 h-8" data-k="'+k+'" data-d="-1">−</button>'+c.q+'<button class="bd w-8 h-8" data-k="'+k+'" data-d="1">+</button></div></div><button class="text-xl opacity-60 hover:opacity-100" data-k="'+k+'" data-d="0" aria-label="Remove">✕</button></div>'}
+$("ci").innerHTML=n?h:'<p class="text-center py-10 opacity-70">Your cart is empty. Add a hoodie to get started.</p>';
+$("cc").textContent=n;var ds=promo?Math.round(sub*.05):0,dl=n?+$("rg").value:0;
+$("s1").textContent=tk(sub);$("s2").textContent="−"+tk(ds);$("s3").textContent=tk(dl);$("s4").textContent=tk(sub-ds+dl)}
+$("ci").onclick=function(e){var b=e.target.closest("button");if(!b)return;var k=b.dataset.k,d=+b.dataset.d;
+if(d==0)delete C[k];else if(d>0){if(cnt(C[k].i)>=5){toast("Maximum 5 per item");return}C[k].q++}else if(--C[k].q<1)delete C[k];draw()};
+function oc(o){$("cart").classList.toggle("open",o);$("cart").setAttribute("aria-hidden",!o);document.body.style.overflow=o?"hidden":""}
+$("cb").onclick=function(){oc(true)};$("cl").onclick=function(){oc(false)};
+addEventListener("keydown",function(e){if(e.key=="Escape")oc(false)});
+$("rg").onchange=draw;
+$("pa").onclick=function(){if($("pc").value.trim().toUpperCase()=="ROSE5"){promo=true;toast("Promo applied: 5% off")}else{promo=false;toast("Invalid promo code")}draw()};
+$("po").onclick=function(){if(!Object.keys(C).length)return toast("Your cart is empty");
+if(!$("fn").value.trim()||!$("ph").value.trim()||!$("ad").value.trim())return toast("Fill in name, phone and address");
+C={};promo=false;draw();oc(false);toast("Order placed. We will call to confirm.")};
+/* faq */
+document.querySelectorAll("#fq button").forEach(function(b){b.onclick=function(){var d=b.parentNode,o=d.classList.contains("o");document.querySelectorAll("#fq .fa").forEach(function(x){x.classList.remove("o")});if(!o)d.classList.add("o")}});
+$("cf").onsubmit=function(e){e.preventDefault();e.target.reset();toast("Message sent. Thank you!")};
+/* big text: fit to width + mouse-follow gradient */
+var bt=$("bt");
+function fit(){var p=bt.parentNode,cs=getComputedStyle(p),w=p.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight),o=$("bo");
+bt.style.fontSize="100px";var cw=o.getBoundingClientRect().width;if(!cw||w<=0)return;
+bt.style.fontSize=(w/cw*100*.985)+"px";bt.style.setProperty("--r",Math.max(110,w*.22)+"px")}
+fit();addEventListener("load",fit);addEventListener("resize",fit);
+if(window.ResizeObserver)new ResizeObserver(fit).observe(bt.parentNode);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+function mv(e){var b=bt.getBoundingClientRect();bt.style.setProperty("--x",(e.clientX-b.left)+"px");bt.style.setProperty("--y",(e.clientY-b.top)+"px")}
+bt.addEventListener("pointermove",mv);bt.addEventListener("pointerdown",mv);
+/* mobile menu (slides down from top) */
+var mm=$("mm"),mo=$("mo");
+function menu(o){mm.classList.toggle("-translate-y-full",!o);mo.classList.toggle("opacity-0",!o);mo.classList.toggle("pointer-events-none",!o);mm.setAttribute("aria-hidden",!o);document.body.style.overflow=o?"hidden":""}
+$("mb").onclick=function(){menu(true)};$("mx").onclick=function(){menu(false)};mo.onclick=function(){menu(false)};
+mm.querySelectorAll("a").forEach(function(a){a.onclick=function(){menu(false)}});
+addEventListener("keydown",function(e){if(e.key=="Escape")menu(false)});
+addEventListener("resize",function(){if(innerWidth>=768)menu(false)});
+draw();
+</script>
+</body>
+</html>
